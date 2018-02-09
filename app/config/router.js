@@ -1,13 +1,20 @@
 import React from 'react'; 
 import { StackNavigator } from 'react-navigation'; 
-import SelectDeck from '../screens/SelectDeck'; 
+import Home from '../screens/Home'; 
 import Swipe from '../screens/Swipe'; 
+import NewDeck from '../screens/NewDeck'; 
 
 export const SwipeStack = StackNavigator({
-  SelectDeck: {
-    screen: SelectDeck, 
+  Home: {
+    screen: Home, 
     navigationOptions: {
       title: 'Home', 
+    }
+  }, 
+  NewDeck: {
+    screen: NewDeck,  
+    navigationOptions: {
+      title: 'New Deck',  
     }
   }, 
   Swipe: {
